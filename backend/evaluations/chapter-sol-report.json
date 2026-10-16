@@ -1,0 +1,707 @@
+{
+  "runAt": "2026-09-28T14:29:32.817Z",
+  "archiveIdentifier": "animal-farm-by-george-orwell_202208",
+  "model": "gpt-6-sol",
+  "reasoningEffort": "medium",
+  "maxOutputTokens": 4096,
+  "calls": [
+    {
+      "status": 200,
+      "model": "gpt-6-sol",
+      "milliseconds": 3991,
+      "usage": {
+        "input_tokens": 2032,
+        "input_tokens_details": {
+          "cache_write_tokens": 2029,
+          "cached_tokens": 0
+        },
+        "output_tokens": 105,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2137
+      },
+      "error": null,
+      "incompleteDetails": null
+    },
+    {
+      "status": 200,
+      "model": "gpt-6-sol",
+      "milliseconds": 3669,
+      "usage": {
+        "input_tokens": 2029,
+        "input_tokens_details": {
+          "cache_write_tokens": 2026,
+          "cached_tokens": 0
+        },
+        "output_tokens": 105,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2134
+      },
+      "error": null,
+      "incompleteDetails": null
+    },
+    {
+      "status": 200,
+      "model": "gpt-6-sol",
+      "milliseconds": 3989,
+      "usage": {
+        "input_tokens": 2000,
+        "input_tokens_details": {
+          "cache_write_tokens": 1997,
+          "cached_tokens": 0
+        },
+        "output_tokens": 117,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2117
+      },
+      "error": null,
+      "incompleteDetails": null
+    },
+    {
+      "status": 200,
+      "model": "gpt-6-sol",
+      "milliseconds": 3783,
+      "usage": {
+        "input_tokens": 927,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 141,
+        "output_tokens_details": {
+          "reasoning_tokens": 36
+        },
+        "total_tokens": 1068
+      },
+      "error": null,
+      "incompleteDetails": null
+    },
+    {
+      "status": 200,
+      "model": "gpt-6-sol",
+      "milliseconds": 6662,
+      "usage": {
+        "input_tokens": 5283,
+        "input_tokens_details": {
+          "cache_write_tokens": 5280,
+          "cached_tokens": 0
+        },
+        "output_tokens": 274,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5557
+      },
+      "error": null,
+      "incompleteDetails": null
+    },
+    {
+      "status": 200,
+      "model": "gpt-6-sol",
+      "milliseconds": 3974,
+      "usage": {
+        "input_tokens": 5290,
+        "input_tokens_details": {
+          "cache_write_tokens": 5287,
+          "cached_tokens": 0
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5378
+      },
+      "error": null,
+      "incompleteDetails": null
+    },
+    {
+      "status": 200,
+      "model": "gpt-6-sol",
+      "milliseconds": 2529,
+      "usage": {
+        "input_tokens": 5290,
+        "input_tokens_details": {
+          "cache_write_tokens": 5287,
+          "cached_tokens": 0
+        },
+        "output_tokens": 52,
+        "output_tokens_details": {
+          "reasoning_tokens": 18
+        },
+        "total_tokens": 5342
+      },
+      "error": null,
+      "incompleteDetails": null
+    }
+  ],
+  "note": "Live generation and retrieval. Checks validate scope, citation membership, answer state, and key terms; manual review is still required for factual accuracy.",
+  "results": [
+    {
+      "id": "chapter-one-ending",
+      "question": "What happened at the end of chapter one?",
+      "expected": [
+        "Jones",
+        "gunfire interrupts the meeting",
+        "animals disperse and sleep"
+      ],
+      "checks": {
+        "correctScope": true,
+        "onlyRequestedChapter": true,
+        "expectedAnswerState": true,
+        "expectedTerms": true,
+        "chronology": true
+      },
+      "passed": true,
+      "publishedVersion": "015ed66b-4b46-4b98-b984-6cd12872d93f",
+      "scope": {
+        "chapter": "Chapter 1",
+        "number": 1,
+        "mode": "ending",
+        "coverage": "ending-passages",
+        "focusChunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1"
+      },
+      "answer": "At the end of the chapter, the animals excitedly sang \u201cBeasts of England\u201d together five times. The noise woke Mr. Jones, who fired his gun into the darkness. The pellets struck the barn wall, and the animals hurried back to their sleeping places; the farm was soon asleep.",
+      "insufficientEvidence": false,
+      "retrieved": [
+        {
+          "chunkId": "f84697d4-549c-42ba-b567-950d927b24b8",
+          "chunkIndex": 26,
+          "chapter": "Chapter 1",
+          "startOffset": 46932,
+          "endOffset": 48888
+        },
+        {
+          "chunkId": "a6c3a903-81b9-463a-9464-36d9060ffc9b",
+          "chunkIndex": 27,
+          "chapter": "Chapter 1",
+          "startOffset": 48844,
+          "endOffset": 50330
+        },
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chunkIndex": 28,
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "references": [
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "manualReview": {
+        "passed": true,
+        "note": "Reviewed answer against chapter evidence and expected events; no observed factual error."
+      }
+    },
+    {
+      "id": "roman-ending",
+      "question": "How does Chapter I end?",
+      "expected": [
+        "Jones interrupts the singing",
+        "meeting ends"
+      ],
+      "checks": {
+        "correctScope": true,
+        "onlyRequestedChapter": true,
+        "expectedAnswerState": true,
+        "expectedTerms": true,
+        "chronology": true
+      },
+      "passed": true,
+      "publishedVersion": "015ed66b-4b46-4b98-b984-6cd12872d93f",
+      "scope": {
+        "chapter": "Chapter 1",
+        "number": 1,
+        "mode": "ending",
+        "coverage": "ending-passages",
+        "focusChunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1"
+      },
+      "answer": "The animals enthusiastically join in \u201cBeasts of England,\u201d singing it five times. The noise wakes Mr. Jones, who fires his gun into the darkness. The shot hits the barn wall, the meeting breaks up, and the animals hurry to their sleeping places. Soon the whole farm is asleep.",
+      "insufficientEvidence": false,
+      "retrieved": [
+        {
+          "chunkId": "f84697d4-549c-42ba-b567-950d927b24b8",
+          "chunkIndex": 26,
+          "chapter": "Chapter 1",
+          "startOffset": 46932,
+          "endOffset": 48888
+        },
+        {
+          "chunkId": "a6c3a903-81b9-463a-9464-36d9060ffc9b",
+          "chunkIndex": 27,
+          "chapter": "Chapter 1",
+          "startOffset": 48844,
+          "endOffset": 50330
+        },
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chunkIndex": 28,
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "references": [
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "manualReview": {
+        "passed": true,
+        "note": "Reviewed answer against chapter evidence and expected events; no observed factual error."
+      }
+    },
+    {
+      "id": "chapter-two-ending",
+      "question": "What happened at the end of chapter two?",
+      "expected": [
+        "animals go to harvest",
+        "milk disappears"
+      ],
+      "checks": {
+        "correctScope": true,
+        "onlyRequestedChapter": true,
+        "expectedAnswerState": true,
+        "expectedTerms": true,
+        "chronology": true
+      },
+      "passed": true,
+      "publishedVersion": "015ed66b-4b46-4b98-b984-6cd12872d93f",
+      "scope": {
+        "chapter": "Chapter 2",
+        "number": 2,
+        "mode": "ending",
+        "coverage": "ending-passages",
+        "focusChunkId": "7a1c167d-e2c4-4b24-9ab2-1f36cbfe1157"
+      },
+      "answer": "At the end of Chapter 2, the pigs milked the cows and filled five buckets. When the animals asked what would happen to the milk, Napoleon told them to focus on the hay harvest. They went to the hayfield, and when they returned that evening, the milk had disappeared. The passage does not say what happened to it.",
+      "insufficientEvidence": false,
+      "retrieved": [
+        {
+          "chunkId": "12a05316-cd88-4a3b-bd85-780e070e84a9",
+          "chunkIndex": 35,
+          "chapter": "Chapter 2",
+          "startOffset": 61504,
+          "endOffset": 63600
+        },
+        {
+          "chunkId": "e7decf6c-3dec-4370-a5c5-940985a3067c",
+          "chunkIndex": 36,
+          "chapter": "Chapter 2",
+          "startOffset": 63555,
+          "endOffset": 65401
+        },
+        {
+          "chunkId": "7a1c167d-e2c4-4b24-9ab2-1f36cbfe1157",
+          "chunkIndex": 37,
+          "chapter": "Chapter 2",
+          "startOffset": 65403,
+          "endOffset": 66611
+        }
+      ],
+      "references": [
+        {
+          "chunkId": "7a1c167d-e2c4-4b24-9ab2-1f36cbfe1157",
+          "chapter": "Chapter 2",
+          "startOffset": 65403,
+          "endOffset": 66611
+        }
+      ],
+      "manualReview": {
+        "passed": true,
+        "note": "Reviewed answer against chapter evidence and expected events; no observed factual error."
+      }
+    },
+    {
+      "id": "chapter-two-opening",
+      "question": "What happens at the beginning of chapter II?",
+      "expected": [
+        "Old Major dies",
+        "pigs organize"
+      ],
+      "checks": {
+        "correctScope": true,
+        "onlyRequestedChapter": true,
+        "expectedAnswerState": true,
+        "expectedTerms": false,
+        "chronology": true
+      },
+      "passed": false,
+      "publishedVersion": "015ed66b-4b46-4b98-b984-6cd12872d93f",
+      "scope": {
+        "chapter": "Chapter 2",
+        "number": 2,
+        "mode": "beginning",
+        "coverage": "beginning-passages",
+        "focusChunkId": "f8e45cf4-2252-4437-a249-36dcdfd8f99c"
+      },
+      "answer": "Chapter II opens with old Major dying peacefully in his sleep three nights later. He is buried at the foot of the orchard. This is early March; over the next three months, the animals secretly prepare for the rebellion Major predicted, with the pigs taking charge of teaching and organizing the others.",
+      "insufficientEvidence": false,
+      "retrieved": [
+        {
+          "chunkId": "f8e45cf4-2252-4437-a249-36dcdfd8f99c",
+          "chunkIndex": 29,
+          "chapter": "Chapter 2",
+          "startOffset": 51633,
+          "endOffset": 53239
+        }
+      ],
+      "references": [
+        {
+          "chunkId": "f8e45cf4-2252-4437-a249-36dcdfd8f99c",
+          "chapter": "Chapter 2",
+          "startOffset": 51633,
+          "endOffset": 53239
+        }
+      ],
+      "manualReview": {
+        "passed": true,
+        "note": "Correct death chronology. Original automated expectedTerms check falsely rejected the word dying; raw check retained. Evaluation script now accepts dying."
+      }
+    },
+    {
+      "id": "chapter-one-summary",
+      "question": "Summarize chapter one.",
+      "expected": [
+        "Major addresses animals",
+        "Beasts of England",
+        "Jones ends the gathering"
+      ],
+      "checks": {
+        "correctScope": true,
+        "onlyRequestedChapter": true,
+        "expectedAnswerState": true,
+        "expectedTerms": true,
+        "chronology": true
+      },
+      "passed": true,
+      "publishedVersion": "015ed66b-4b46-4b98-b984-6cd12872d93f",
+      "scope": {
+        "chapter": "Chapter 1",
+        "number": 1,
+        "mode": "overview",
+        "coverage": "complete-chapter",
+        "focusChunkId": null
+      },
+      "answer": "After Mr. Jones goes to bed, the animals gather in the barn to hear old Major speak about a dream. Major argues that humans take the fruits of the animals\u2019 labor and are responsible for their hardship. He urges the animals to unite in a future rebellion, while warning them not to adopt human habits or oppress one another. The animals vote that rats are comrades, and Major teaches them \u201cBeasts of England,\u201d a song about freedom from human rule. Their enthusiastic singing wakes Jones, who fires his gun into the darkness; the animals scatter and go to sleep.",
+      "insufficientEvidence": false,
+      "retrieved": [
+        {
+          "chunkId": "3778c607-86d6-4e97-8569-374e559749ea",
+          "chunkIndex": 20,
+          "chapter": "Chapter 1",
+          "startOffset": 36615,
+          "endOffset": 38172
+        },
+        {
+          "chunkId": "60e92813-09dd-4a7b-a1b3-b31be6ec539a",
+          "chunkIndex": 21,
+          "chapter": "Chapter 1",
+          "startOffset": 38130,
+          "endOffset": 39994
+        },
+        {
+          "chunkId": "dbe6d233-2e71-4483-8a5d-cb26afe6c4a2",
+          "chunkIndex": 22,
+          "chapter": "Chapter 1",
+          "startOffset": 39839,
+          "endOffset": 41772
+        },
+        {
+          "chunkId": "c3023433-4f29-45bd-8fce-18f5bdfe505a",
+          "chunkIndex": 23,
+          "chapter": "Chapter 1",
+          "startOffset": 41557,
+          "endOffset": 43569
+        },
+        {
+          "chunkId": "fe0e98f8-644d-4cca-b076-3cb389c5a734",
+          "chunkIndex": 24,
+          "chapter": "Chapter 1",
+          "startOffset": 43572,
+          "endOffset": 45421
+        },
+        {
+          "chunkId": "3ce9a000-0411-4575-83b0-eb93aca73762",
+          "chunkIndex": 25,
+          "chapter": "Chapter 1",
+          "startOffset": 45258,
+          "endOffset": 47213
+        },
+        {
+          "chunkId": "f84697d4-549c-42ba-b567-950d927b24b8",
+          "chunkIndex": 26,
+          "chapter": "Chapter 1",
+          "startOffset": 46932,
+          "endOffset": 48888
+        },
+        {
+          "chunkId": "a6c3a903-81b9-463a-9464-36d9060ffc9b",
+          "chunkIndex": 27,
+          "chapter": "Chapter 1",
+          "startOffset": 48844,
+          "endOffset": 50330
+        },
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chunkIndex": 28,
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "references": [
+        {
+          "chunkId": "3778c607-86d6-4e97-8569-374e559749ea",
+          "chapter": "Chapter 1",
+          "startOffset": 36615,
+          "endOffset": 38172
+        },
+        {
+          "chunkId": "c3023433-4f29-45bd-8fce-18f5bdfe505a",
+          "chapter": "Chapter 1",
+          "startOffset": 41557,
+          "endOffset": 43569
+        },
+        {
+          "chunkId": "3ce9a000-0411-4575-83b0-eb93aca73762",
+          "chapter": "Chapter 1",
+          "startOffset": 45258,
+          "endOffset": 47213
+        },
+        {
+          "chunkId": "f84697d4-549c-42ba-b567-950d927b24b8",
+          "chapter": "Chapter 1",
+          "startOffset": 46932,
+          "endOffset": 48888
+        },
+        {
+          "chunkId": "a6c3a903-81b9-463a-9464-36d9060ffc9b",
+          "chapter": "Chapter 1",
+          "startOffset": 48844,
+          "endOffset": 50330
+        },
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "manualReview": {
+        "passed": true,
+        "note": "Reviewed answer against chapter evidence and expected events; no observed factual error."
+      }
+    },
+    {
+      "id": "chapter-one-topic",
+      "question": "In chapter 1, why does the meeting break up?",
+      "expected": [
+        "Jones wakes and fires a gun"
+      ],
+      "checks": {
+        "correctScope": true,
+        "onlyRequestedChapter": true,
+        "expectedAnswerState": true,
+        "expectedTerms": true,
+        "chronology": true
+      },
+      "passed": true,
+      "publishedVersion": "015ed66b-4b46-4b98-b984-6cd12872d93f",
+      "scope": {
+        "chapter": "Chapter 1",
+        "number": 1,
+        "mode": "semantic",
+        "coverage": "complete-chapter",
+        "focusChunkId": null
+      },
+      "answer": "The animals\u2019 loud singing woke Mr. Jones. Thinking there was a fox in the yard, he fired his gun into the darkness, and the animals hurriedly broke up the meeting and fled to their sleeping places.",
+      "insufficientEvidence": false,
+      "retrieved": [
+        {
+          "chunkId": "3778c607-86d6-4e97-8569-374e559749ea",
+          "chunkIndex": 20,
+          "chapter": "Chapter 1",
+          "startOffset": 36615,
+          "endOffset": 38172
+        },
+        {
+          "chunkId": "60e92813-09dd-4a7b-a1b3-b31be6ec539a",
+          "chunkIndex": 21,
+          "chapter": "Chapter 1",
+          "startOffset": 38130,
+          "endOffset": 39994
+        },
+        {
+          "chunkId": "dbe6d233-2e71-4483-8a5d-cb26afe6c4a2",
+          "chunkIndex": 22,
+          "chapter": "Chapter 1",
+          "startOffset": 39839,
+          "endOffset": 41772
+        },
+        {
+          "chunkId": "c3023433-4f29-45bd-8fce-18f5bdfe505a",
+          "chunkIndex": 23,
+          "chapter": "Chapter 1",
+          "startOffset": 41557,
+          "endOffset": 43569
+        },
+        {
+          "chunkId": "fe0e98f8-644d-4cca-b076-3cb389c5a734",
+          "chunkIndex": 24,
+          "chapter": "Chapter 1",
+          "startOffset": 43572,
+          "endOffset": 45421
+        },
+        {
+          "chunkId": "3ce9a000-0411-4575-83b0-eb93aca73762",
+          "chunkIndex": 25,
+          "chapter": "Chapter 1",
+          "startOffset": 45258,
+          "endOffset": 47213
+        },
+        {
+          "chunkId": "f84697d4-549c-42ba-b567-950d927b24b8",
+          "chunkIndex": 26,
+          "chapter": "Chapter 1",
+          "startOffset": 46932,
+          "endOffset": 48888
+        },
+        {
+          "chunkId": "a6c3a903-81b9-463a-9464-36d9060ffc9b",
+          "chunkIndex": 27,
+          "chapter": "Chapter 1",
+          "startOffset": 48844,
+          "endOffset": 50330
+        },
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chunkIndex": 28,
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "references": [
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "manualReview": {
+        "passed": true,
+        "note": "Reviewed answer against chapter evidence and expected events; no observed factual error."
+      }
+    },
+    {
+      "id": "unsupported-fact",
+      "question": "In chapter 1, what is Napoleon\u2019s email address?",
+      "expected": [
+        "insufficient evidence"
+      ],
+      "checks": {
+        "correctScope": true,
+        "onlyRequestedChapter": true,
+        "expectedAnswerState": true,
+        "expectedTerms": true,
+        "chronology": true
+      },
+      "passed": true,
+      "publishedVersion": "015ed66b-4b46-4b98-b984-6cd12872d93f",
+      "scope": {
+        "chapter": "Chapter 1",
+        "number": 1,
+        "mode": "semantic",
+        "coverage": "complete-chapter",
+        "focusChunkId": null
+      },
+      "answer": "The retrieved passages do not provide enough evidence to answer this question.",
+      "insufficientEvidence": true,
+      "retrieved": [
+        {
+          "chunkId": "3778c607-86d6-4e97-8569-374e559749ea",
+          "chunkIndex": 20,
+          "chapter": "Chapter 1",
+          "startOffset": 36615,
+          "endOffset": 38172
+        },
+        {
+          "chunkId": "60e92813-09dd-4a7b-a1b3-b31be6ec539a",
+          "chunkIndex": 21,
+          "chapter": "Chapter 1",
+          "startOffset": 38130,
+          "endOffset": 39994
+        },
+        {
+          "chunkId": "dbe6d233-2e71-4483-8a5d-cb26afe6c4a2",
+          "chunkIndex": 22,
+          "chapter": "Chapter 1",
+          "startOffset": 39839,
+          "endOffset": 41772
+        },
+        {
+          "chunkId": "c3023433-4f29-45bd-8fce-18f5bdfe505a",
+          "chunkIndex": 23,
+          "chapter": "Chapter 1",
+          "startOffset": 41557,
+          "endOffset": 43569
+        },
+        {
+          "chunkId": "fe0e98f8-644d-4cca-b076-3cb389c5a734",
+          "chunkIndex": 24,
+          "chapter": "Chapter 1",
+          "startOffset": 43572,
+          "endOffset": 45421
+        },
+        {
+          "chunkId": "3ce9a000-0411-4575-83b0-eb93aca73762",
+          "chunkIndex": 25,
+          "chapter": "Chapter 1",
+          "startOffset": 45258,
+          "endOffset": 47213
+        },
+        {
+          "chunkId": "f84697d4-549c-42ba-b567-950d927b24b8",
+          "chunkIndex": 26,
+          "chapter": "Chapter 1",
+          "startOffset": 46932,
+          "endOffset": 48888
+        },
+        {
+          "chunkId": "a6c3a903-81b9-463a-9464-36d9060ffc9b",
+          "chunkIndex": 27,
+          "chapter": "Chapter 1",
+          "startOffset": 48844,
+          "endOffset": 50330
+        },
+        {
+          "chunkId": "bfb766b8-ed0b-4843-913e-b1d1f18ebec1",
+          "chunkIndex": 28,
+          "chapter": "Chapter 1",
+          "startOffset": 50121,
+          "endOffset": 51633
+        }
+      ],
+      "references": [],
+      "manualReview": {
+        "passed": true,
+        "note": "Reviewed answer against chapter evidence and expected events; no observed factual error."
+      }
+    }
+  ]
+}

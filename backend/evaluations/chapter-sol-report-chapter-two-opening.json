@@ -1,0 +1,74 @@
+{
+  "runAt": "2026-09-28T14:28:46.880Z",
+  "archiveIdentifier": "animal-farm-by-george-orwell_202208",
+  "model": "gpt-6-sol",
+  "reasoningEffort": "medium",
+  "maxOutputTokens": 4096,
+  "calls": [
+    {
+      "status": 200,
+      "model": "gpt-6-sol",
+      "milliseconds": 5615,
+      "usage": {
+        "input_tokens": 927,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 146,
+        "output_tokens_details": {
+          "reasoning_tokens": 39
+        },
+        "total_tokens": 1073
+      },
+      "error": null,
+      "incompleteDetails": null
+    }
+  ],
+  "note": "Live generation and retrieval. Checks validate scope, citation membership, answer state, and key terms; manual review is still required for factual accuracy.",
+  "results": [
+    {
+      "id": "chapter-two-opening",
+      "question": "What happens at the beginning of chapter II?",
+      "expected": [
+        "Old Major dies",
+        "pigs organize"
+      ],
+      "checks": {
+        "correctScope": true,
+        "onlyRequestedChapter": true,
+        "expectedAnswerState": true,
+        "expectedTerms": true,
+        "chronology": true
+      },
+      "passed": true,
+      "publishedVersion": "015ed66b-4b46-4b98-b984-6cd12872d93f",
+      "scope": {
+        "chapter": "Chapter 2",
+        "number": 2,
+        "mode": "beginning",
+        "coverage": "beginning-passages",
+        "focusChunkId": "f8e45cf4-2252-4437-a249-36dcdfd8f99c"
+      },
+      "answer": "Chapter II opens three nights after Major’s speech: he dies peacefully in his sleep and is buried at the foot of the orchard. This is early March. Over the next three months, the animals secretly prepare for the Rebellion Major predicted, with the pigs taking the lead in teaching and organising them.",
+      "insufficientEvidence": false,
+      "retrieved": [
+        {
+          "chunkId": "f8e45cf4-2252-4437-a249-36dcdfd8f99c",
+          "chunkIndex": 29,
+          "chapter": "Chapter 2",
+          "startOffset": 51633,
+          "endOffset": 53239
+        }
+      ],
+      "references": [
+        {
+          "chunkId": "f8e45cf4-2252-4437-a249-36dcdfd8f99c",
+          "chapter": "Chapter 2",
+          "startOffset": 51633,
+          "endOffset": 53239
+        }
+      ]
+    }
+  ]
+}

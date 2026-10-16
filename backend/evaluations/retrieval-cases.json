@@ -1,0 +1,56 @@
+[
+  {
+    "id": "python-exceptions",
+    "identifier": "ByteOfPython",
+    "question": "How do you handle exceptions in Python?",
+    "expectedGroups": [
+      [
+        "put all our error handlers in the except-block"
+      ]
+    ]
+  },
+  {
+    "id": "python-cleanup",
+    "identifier": "ByteOfPython",
+    "question": "How can I ensure a file is closed even when an error occurs?",
+    "expectedGroups": [
+      [
+        "finally clause is executed",
+        "closing of the file to be done automatically"
+      ]
+    ]
+  },
+  {
+    "id": "alice-rabbit",
+    "identifier": "alicesadventures19033gut",
+    "question": "What was unusual about the rabbit Alice followed?",
+    "expectedGroups": [
+      [
+        "waistcoat",
+        "watch"
+      ]
+    ]
+  },
+  {
+    "id": "alice-size",
+    "identifier": "alicesadventures19033gut",
+    "question": "What happened to Alice when she drank from the bottle?",
+    "expectedGroups": [
+      [
+        "ten inches high"
+      ]
+    ]
+  },
+  {
+    "id": "python-unrelated",
+    "identifier": "ByteOfPython",
+    "question": "What is the recommended baking temperature for a chocolate souffle?",
+    "expectedGroups": null
+  },
+  {
+    "id": "alice-unrelated",
+    "identifier": "alicesadventures19033gut",
+    "question": "How do I configure a Kubernetes deployment with three replicas?",
+    "expectedGroups": null
+  }
+]

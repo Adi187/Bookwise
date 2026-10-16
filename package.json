@@ -1,0 +1,40 @@
+{
+  "name": "noteway",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev:backend": "npm run dev --workspace backend",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "build": "npm run build --workspace frontend",
+    "lint": "eslint .",
+    "test": "npm run test --workspaces --if-present",
+    "test:db": "npm run test:db --workspace backend",
+    "test:archive": "npm run test:archive --workspace backend",
+    "migrate:up": "npm run migrate:up --workspace backend",
+    "db:setup": "node backend/scripts/local-db.js setup",
+    "db:check": "npm run db:check --workspace backend",
+    "db:start": "node backend/scripts/local-db.js start",
+    "db:stop": "node backend/scripts/local-db.js stop",
+    "ingest:book": "npm run ingest:book --workspace backend --",
+    "ingest:status": "npm run ingest:status --workspace backend --",
+    "retrieve:book": "npm run retrieve:book --workspace backend --",
+    "evaluate:retrieval": "npm run evaluate:retrieval --workspace backend",
+    "ask:book": "npm run ask:book --workspace backend --",
+    "evaluate:answers": "npm run evaluate:answers --workspace backend"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0"
+  }
+}

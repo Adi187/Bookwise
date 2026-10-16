@@ -1,0 +1,94 @@
+{
+  "archiveIdentifier": "animal-farm-by-george-orwell_202208",
+  "pipelineVersion": "plain-utf8-cl100k-500-75-v1",
+  "sourceSha1": "bb7bcf6cf292b773e3cdf0677132e3adbe8b6c53",
+  "note": "Actual live baseline responses captured before chapter-aware changes; full evidence saved locally under .local/chapter-evaluation/before.json.",
+  "results": [
+    {
+      "question": "What happened at the end of chapter one?",
+      "answer": "At the end of chapter one, the animals had successfully carried out a rebellion that expelled Mr. Jones and his men from the farm, which then became theirs. They destroyed all things that reminded them of Mr. Jones, including whips, halters, and ribbons. They celebrated their victory by singing \"Beasts of England\" multiple times and slept peacefully for the first time. The next morning, they joyfully explored their farm, realizing it was truly theirs. They cautiously entered the farmhouse, admiring its luxuries, but decided to preserve it as a museum and agreed no animal should ever live there. The chapter concludes with Snowball and Napoleon calling the animals together to begin the hay harvest and to reveal that the pigs had been teaching themselves to read and write, preparing to paint the Seven Commandments on the barn wall.",
+      "insufficientEvidence": false,
+      "publishedVersion": "07daa2cf-8b49-42a9-bbe6-58af988b871a",
+      "retrieved": [
+        {
+          "chunkId": "d250cab1-6d1b-42d4-866e-45efff2a7835",
+          "chunkIndex": 34,
+          "chapter": null,
+          "startOffset": 59948,
+          "endOffset": 61828
+        },
+        {
+          "chunkId": "ff2fdc7d-09b8-4ef0-ae66-549a095a216b",
+          "chunkIndex": 32,
+          "chapter": null,
+          "startOffset": 56624,
+          "endOffset": 58380
+        },
+        {
+          "chunkId": "fcfe58dc-fb42-4927-a47d-316e30c23713",
+          "chunkIndex": 33,
+          "chapter": null,
+          "startOffset": 58335,
+          "endOffset": 60153
+        },
+        {
+          "chunkId": "fe7cdbcc-ea90-4415-a32b-6ee60bcca324",
+          "chunkIndex": 51,
+          "chapter": null,
+          "startOffset": 88610,
+          "endOffset": 90309
+        },
+        {
+          "chunkId": "93cf1d79-e5c1-4c6a-85c3-3c3e778a0b47",
+          "chunkIndex": 35,
+          "chapter": null,
+          "startOffset": 61504,
+          "endOffset": 63600
+        }
+      ]
+    },
+    {
+      "question": "What happened at the end of chapter two?",
+      "answer": "At the end of chapter two, the animals, having risen up against their neglectful owner Mr. Jones and his men who tried to whip them while they were feeding themselves, successfully chased them away from the farm. Following this victory, the animals destroyed everything that reminded them of Mr. Jones. Napoleon then led them back to the store-shed where they were each given a double ration of corn, and the dogs received two biscuits each. They sang \"Beasts of England\" seven times and then slept peacefully. The next morning, filled with joy that the farm was now theirs, they explored the land, realizing it belonged to them and were excited by this new reality. They were initially afraid to enter the farmhouse, but Snowball and Napoleon opened the door, and the animals went inside. Additionally, three nights after Major's death, the intelligent animals began preparations for the predicted rebellion, with the pigs, especially Snowball and Napoleon, taking the lead in teaching and organizing the others.",
+      "insufficientEvidence": false,
+      "publishedVersion": "07daa2cf-8b49-42a9-bbe6-58af988b871a",
+      "retrieved": [
+        {
+          "chunkId": "ff2fdc7d-09b8-4ef0-ae66-549a095a216b",
+          "chunkIndex": 32,
+          "chapter": null,
+          "startOffset": 56624,
+          "endOffset": 58380
+        },
+        {
+          "chunkId": "98261e5e-9156-4f01-b95d-a82ac6cc80f7",
+          "chunkIndex": 124,
+          "chapter": null,
+          "startOffset": 214030,
+          "endOffset": 215051
+        },
+        {
+          "chunkId": "d250cab1-6d1b-42d4-866e-45efff2a7835",
+          "chunkIndex": 34,
+          "chapter": null,
+          "startOffset": 59948,
+          "endOffset": 61828
+        },
+        {
+          "chunkId": "fe7cdbcc-ea90-4415-a32b-6ee60bcca324",
+          "chunkIndex": 51,
+          "chapter": null,
+          "startOffset": 88610,
+          "endOffset": 90309
+        },
+        {
+          "chunkId": "7566c611-ccbf-4d71-8b8d-3f7ed92aac9e",
+          "chunkIndex": 29,
+          "chapter": null,
+          "startOffset": 51627,
+          "endOffset": 53239
+        }
+      ]
+    }
+  ]
+}

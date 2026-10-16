@@ -1,0 +1,30 @@
+{
+  "runAt": "2026-09-28T14:56:20.105Z",
+  "paidCalls": 0,
+  "results": [
+    {
+      "identifier": "alicesadventures19033gut",
+      "answer": "This edition has 10 detected chapters, according to its chapter index.",
+      "chapterCount": 10,
+      "boundaryQueriesChecked": 20
+    },
+    {
+      "identifier": "ourdebttogreeceandrome",
+      "answer": "This edition has 4 detected chapters, according to its chapter index.",
+      "chapterCount": 4,
+      "boundaryQueriesChecked": 8
+    },
+    {
+      "identifier": "ByteOfPython",
+      "answer": "This edition has 19 detected chapters, according to its chapter index.",
+      "chapterCount": 19,
+      "boundaryQueriesChecked": 38
+    },
+    {
+      "identifier": "animal-farm-by-george-orwell_202208",
+      "answer": "This edition has 10 detected chapters, according to its chapter index.",
+      "chapterCount": 10,
+      "boundaryQueriesChecked": 20
+    }
+  ]
+}

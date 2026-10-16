@@ -1,0 +1,4 @@
+{
+  "metadata": { "identifier": "noteway-test-edition", "title": "The Lantern Library", "creator": "Noteway Test Author", "mediatype": "texts" },
+  "files": [{ "name": "book.txt", "format": "Text", "size": "200", "sha1": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" }]
+}

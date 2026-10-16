@@ -1,0 +1,31 @@
+import { afterEach, expect, it, vi } from 'vitest';
+import { cleanup, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { MemoryRouter } from 'react-router-dom';
+import PasswordResetPage from '../PasswordResetPage.jsx';
+afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
+it('requests a reset email and shows the generic confirmation', async () => {
+  const fetchMock = vi.fn(async () => new Response(JSON.stringify({ message: 'If an account exists, check your email.' })));
+  vi.stubGlobal('fetch', fetchMock);
+  render(<MemoryRouter><PasswordResetPage /></MemoryRouter>);
+  const user = userEvent.setup();
+  await user.type(screen.getByLabelText('Email'), 'reader@example.test');
+  await user.click(screen.getByRole('button', { name: 'Send reset link' }));
+  expect(await screen.findByRole('status')).toHaveProperty('textContent', 'If an account exists, check your email.');
+  expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toEqual({ email: 'reader@example.test' });
+});
+it('checks confirmation and submits the token from the reset link', async () => {
+  const fetchMock = vi.fn(async () => new Response(JSON.stringify({ message: 'Password updated.' })));
+  vi.stubGlobal('fetch', fetchMock);
+  const token = 'a'.repeat(64);
+  render(<MemoryRouter initialEntries={[`/reset-password#token=${token}`]}><PasswordResetPage reset /></MemoryRouter>);
+  const user = userEvent.setup();
+  await user.type(screen.getByLabelText('New password'), 'my-new-password');
+  await user.click(screen.getByRole('button', { name: 'Reset password' }));
+  expect(await screen.findByText('Passwords do not match.')).toBeTruthy();
+  expect(fetchMock).not.toHaveBeenCalled();
+  await user.type(screen.getByLabelText('Confirm password'), 'my-new-password');
+  await user.click(screen.getByRole('button', { name: 'Reset password' }));
+  expect(await screen.findByText('Password updated.')).toBeTruthy();
+  expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toEqual({ token, password: 'my-new-password' });
+});

@@ -1,0 +1,34 @@
+{
+  "name": "@noteway/backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:archive": "node scripts/check-archive.js",
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "migrate:up": "node scripts/migrate.js",
+    "db:check": "node scripts/check-db.js",
+    "test": "vitest run tests/unit",
+    "test:db": "vitest run tests/integration",
+    "ingest:book": "node scripts/ingest-book.js",
+    "ingest:status": "node scripts/ingestion-status.js",
+    "retrieve:book": "node scripts/retrieve-book.js",
+    "evaluate:retrieval": "node scripts/evaluate-retrieval.js",
+    "ask:book": "node scripts/ask-book.js",
+    "evaluate:answers": "node scripts/evaluate-answers.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.0",
+    "jose": "^6.2.12",
+    "js-tiktoken": "^1.0.21",
+    "node-pg-migrate": "^8.0.3",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4",
+    "vitest": "^4.0.0"
+  }
+}

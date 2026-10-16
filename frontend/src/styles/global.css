@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+
+:root {
+  color-scheme: light;
+  --background: #F7F6F2; --surface: #FFFFFF; --surface-elevated: #FCFCFA;
+  --text-primary: #1C1C1A; --text-secondary: #5F5F5A; --text-muted: #6F6F69;
+  --border-subtle: #DDDCD6; --primary: #3730A3; --primary-hover: #312E81;
+  --primary-foreground: #FFFFFF; --success: #287A4B; --warning: #8A5C00;
+  --danger: #B42318; --focus: #4F46E5; --disabled: #A3A39D; --disabled-surface: #ECEBE6;
+}
+.dark {
+  color-scheme: dark;
+  --background: #171716; --surface: #20201E; --surface-elevated: #292926;
+  --text-primary: #F2F1EC; --text-secondary: #C2C1BA; --text-muted: #9A9992;
+  --border-subtle: #3B3A36; --primary: #A5B4FC; --primary-hover: #C7D2FE;
+  --primary-foreground: #171716; --success: #75C996; --warning: #E2B95B;
+  --danger: #F08A80; --focus: #A5B4FC; --disabled: #6F6E68; --disabled-surface: #292926;
+}
+@theme inline {
+  --font-sans: 'Inter Variable', sans-serif;
+  --color-background: var(--background); --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-ink: var(--text-primary); --color-secondary: var(--text-secondary); --color-muted: var(--text-muted);
+  --color-subtle: var(--border-subtle); --color-primary: var(--primary); --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground); --color-success: var(--success);
+  --color-warning: var(--warning); --color-danger: var(--danger); --color-focus: var(--focus);
+  --color-disabled: var(--disabled); --color-disabled-surface: var(--disabled-surface);
+  --radius-card: 8px; --radius-control: 6px; --radius-input: 8px; --radius-popover: 12px;
+}
+@layer base {
+  body { @apply m-0 bg-background font-sans text-base leading-6 text-ink antialiased; }
+  h1 { @apply text-2xl font-semibold leading-7 tracking-tight; }
+  h2 { @apply text-xl font-semibold leading-6 tracking-tight; }
+  h3 { @apply text-lg font-semibold leading-6; }
+  p, h1, h2, h3, a, blockquote { overflow-wrap: anywhere; }
+  button, input, textarea { font: inherit; }
+  button, summary { cursor: pointer; }
+  button:disabled { cursor: not-allowed; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+  input:not([type='checkbox']), textarea { @apply w-full rounded-input border border-subtle bg-surface px-4 py-3 text-ink placeholder:text-muted disabled:bg-disabled-surface disabled:text-disabled; }
+  input[aria-invalid='true'], textarea[aria-invalid='true'] { border-color: var(--danger); }
+  input:not([type='checkbox']) { height: 48px; }
+  input[data-warning='true'], textarea[data-warning='true'] { border-color: var(--warning); }
+  textarea { min-height: 128px; resize: vertical; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+}
+@layer components {
+  .text-link { @apply inline-flex min-h-11 items-center gap-2 text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary; }
+  .page-stack { @apply space-y-8; }
+}
